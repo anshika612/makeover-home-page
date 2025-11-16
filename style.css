@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+.playpen-sans-italic {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Top-Container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #942A59;
+}
+
+/* BANNER SECTION START */
+
+/* DESKTOP BANNER SECTION START */
+.desktop-banner{
+   background-image: radial-gradient(#E05A8E, #942A59);
+   height:450px;
+   position:relative;
+
+}
+.desktop-img{
+  height:450px;
+  position:absolute;
+}
+/* MOBILE BANNER SECTION START */
+.outer-container{
+ background-image: radial-gradient(#E05A8E, #942A59);
+height:auto;
+position:relative;
+}
+
+.makeover{
+  line-height: 0.5!important;
+  margin-top: 15px;
+  margin-left: 5px;
+  color:white;
+}
+.img-banner{
+  width:100%;
+}
+.banner-heading{
+  position:absolute;
+  bottom:10px;
+  right:5px;
+  float: right;
+font-size:4.5vw;
+font-weight: bolder;
+text-align:right;
+}
+
+@media (min-width:992px) {
+  .outer-container{
+    display:none;
+  }
+}
+@media(max-width:992px){
+  .desktop-banner{
+    display: none;
+  }
+}
+
+
+
+
+
+/* img section start */
+ .Col-Heading {
+  font-size: 2.5vw;
+}
+.para-text{
+font-size:1.5vw;
+} 
+@media(min-width: 1200px) {
+  .custom-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important; 
+  }
+  .custom-row .col-auto {
+    flex: 0 0 19%; 
+    max-width: 19%;
+  }
+}
+/* another section start */
+ .Service-container {
+  margin: 80px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.mini-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 300px;
+}
+
+.card-box {
+  padding: 24px;
+  background-color: #FBF6E6;
+  border-radius: 8px;
+  text-align: center;
+}
+.large-card {
+  position: relative;       
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;      
+  padding: 24px;
+  background-color: #FBF6E6;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  
+}
+
+.large-card img {
+  position: absolute;       
+  bottom: 0;                
+  left: 50%;                
+  transform: translateX(-50%); 
+  max-width: 90%;           
+  height: 50%;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .mini-card,
+  .large-card {
+    width: 90% !important;
+    max-width: none !important;
+  }
+
+  .large-card img {
+    position: static; 
+    transform: none;
+    height: auto;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 990px) {
+  .large-card {
+    min-height: 400px; 
+  }
+
+  .large-card img {
+    position: static;      
+    transform: none;
+    height: auto;           
+    margin-top: 16px;       
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mini-card, .large-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .large-card {
+    order: 2;
+  }
+
+  .mini-card:first-of-type {
+    order: 1;
+  }
+
+  .mini-card:last-of-type {
+    order: 3;
+  }
+
+  .large-card img {
+    position: static;
+    transform: none;
+    height: auto;
+    margin-top: 16px;
+  }
+}
+
+/* Img-banner section start */
+.cards{
+  width:350px;
+  height:450px;
+ 
+}
+/* feedback section start */
+.feedback-container{
+  background-color: rgb(144, 137, 137,0.1);
+}
+.pink-text{
+  color: #942A59;
+}
+
+.slider-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.slides {
+  display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+  gap: 20px;
+  transition: transform 0.6s ease;
+}
+.col-card{
+  width: 500px;
+  background-color: #942A59;
+  height:300px;
+   opacity: 0.7;
+  transform: scale(0.9);
+  flex: 0 0 auto; 
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.card-rectangle{
+  
+width:50%;
+display:flex;
+position:relative;
+align-items: center;
+} 
+.card-piller{
+  display:flex;
+  align-items:center;
+  width:90%;  height:70%;
+   position:absolute;
+   left:20px;
+  gap:10px;
+}
+.piller-card-small{
+  background-color: white;
+  height:50%;
+  
+  width:30px; 
+  border-radius:15px;
+}
+.piller-card-large{
+  background-color:white;
+  height:100%;
+  width:30px;
+  border-radius:15px;
+}
+
+.img-circle{
+  width:50%;
+  height:50%;
+  margin-left:-30px;
+}
+.font-small-1{
+  font-size: 0.5vw;
+}
+.font-small-2{
+  font-size: 0.8vw;
+}
+/* Navigation buttons below */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nav label {
+  background-color: #942A59;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.nav label:hover {
+  background-color: #6f1f44;
+}
+
+.text-white {
+  margin-left: 15px;
+  text-align: left;
+}
+
+
+/* Slider wrapper */
+.slider-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+/* Slides track */
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+/* Hide other cards slightly */
+.col-card {
+  opacity: 0.7;
+  transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Radio buttons hidden */
+input[type="radio"] {
+  display: none;
+}
+
+
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+#slide2:checked ~ .slides { transform: translateX(calc(-1 * 550px)); }
+#slide3:checked ~ .slides { transform: translateX(calc(-2 * 550px)); }
+
+
+#slide1:checked ~ .slides .col-card:nth-child(1),
+#slide2:checked ~ .slides .col-card:nth-child(2),
+#slide3:checked ~ .slides .col-card:nth-child(3) {
+  transform: scale(1.05);
+  opacity: 1;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .col-card {
+    width: 90%;   
+  }
+}
+
+
+/* FOOTER SECTION START */
+ .circle{
+border-radius:50%;
+background-color: grey;
+padding:5px;
+margin:5px;
+ }
